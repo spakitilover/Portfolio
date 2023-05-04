@@ -3,6 +3,7 @@ import image2 from "./../images/ecm.png";
 import image3 from "./../images/image2.png";
 import image4 from "./../images/image3.jpg";
 import anim from "./../images/anim.png";
+import { Link } from "react-router-dom";
 
 import ArrowRightAlt from "@mui/icons-material/ArrowRightAlt";
 import { motion } from "framer-motion";
@@ -61,10 +62,12 @@ const Projects = () => {
               <div className="detail">
                 <h1 className="text-4xl opacity-100">Full Stack Project</h1>
                 <h1 className="my-2"> Ecommerce Web Site</h1>
-                <button className="hover:text-gray-900 duration-500 flex items-center">
-                  Check out
-                  <ArrowRightAlt />
-                </button>
+                <Link to="https://github.com/spakitilover/E-Commerce-Shop">
+                  <button className="hover:text-gray-900 duration-500 flex items-center">
+                    Check out
+                    <ArrowRightAlt />
+                  </button>
+                </Link>
               </div>
             </div>
           </motion.div>

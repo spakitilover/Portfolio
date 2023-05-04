@@ -17,7 +17,7 @@ const Intro = () => {
             <div className=" lg:my-5 my-5">
               <span className=" text-gray-500 ">
                 Hello there , My name is Tarik Kabaki . Im A Full Stack Web
-                Developer, And UI/UX Designer.
+                Developer, And UI/UX Integrator.
               </span>
             </div>
             <div>

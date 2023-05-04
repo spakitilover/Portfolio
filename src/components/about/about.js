@@ -25,7 +25,7 @@ const About = () => {
                   <LaptopMac className="text-white " />
                 </div>
                 <h1 className="my-10 lg:text-2xl text-blue-900 lg:w-[100px] w-[50px]">
-                  UI/UX Design
+                  UI/UX Integrator
                 </h1>
                 <span className="animate-pulse text-purple-800 hover:text-white duration-300 cursor-pointer">
                   Read More
@@ -92,7 +92,7 @@ const About = () => {
               </span>
               <div className="flex justify-center my-10">
                 <span className="w-[300px] text-lg text-white flex justify-center text-center ">
-                  Full Stack Web Developer , And UI/UX Designer
+                  Full Stack Web Developer , And UI/UX Integrator
                 </span>
               </div>
             </motion.div>
