@@ -8,11 +8,11 @@
   }
 
   .image {
-    @apply lg:h-[100%] lg:w-[100%] absolute object-cover;
+    @apply lg:h-[100%] lg:w-[100%] h-[100%] w-[100%] absolute object-cover;
   }
 
   .image-container {
-    @apply lg:w-[550px] lg:h-[300px] relative border-2 border-white overflow-hidden rounded-lg;
+    @apply lg:w-[550px] lg:h-[300px] w-full h-[300px] my-5  relative border-2 border-white overflow-hidden rounded-lg;
   }
 
   .image-container:hover .image {

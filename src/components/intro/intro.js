@@ -20,10 +20,14 @@ const Intro = () => {
                 Developer, And UI/UX Integrator.
               </span>
             </div>
+            <h1 className="text-2xl bg-gradient-to-r from-rose-500 to-blue-500 bg-clip-text text-transparent">
+              Short About Me
+            </h1>
             <div>
-              <button className="lg:my-5 my-5 w-[180px] h-[60px] bg-gradient-to-r from-pink-500 to-yellow-500 text-white shadow-md shadow-black font-bold">
-                Download Cv
-              </button>
+              <p className="text-gray-500">
+                Im a Full Stack Web Developer with strong knowledge on React Js
+                and Nest Js also able to Work with Next Js and Node js{" "}
+              </p>
             </div>
           </div>
         </div>

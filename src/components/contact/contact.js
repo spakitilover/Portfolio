@@ -22,11 +22,11 @@ const Contact = () => {
 
   return (
     <div
-      className="w-full h-auto bg-gradient-to-r from-gray-700 to-gray-800"
+      className="w-full h-auto flex justify-center bg-gradient-to-r from-gray-700 to-gray-800"
       id="contact"
     >
-      <div className="flex justify-center gap-10">
-        <div>
+      <div className="lg:flex md:flex justify-center gap-10">
+        <div className="">
           <motion.div
             initial="offscreen"
             whileInView="onscreen"

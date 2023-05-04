@@ -30,13 +30,13 @@ const Projects = () => {
 
   return (
     <div className="w-full h-auto bg-gray-700 " id="projects">
-      <h1 className=" flex justify-center ">
+      <h1 className="flex justify-center">
         <h1 className="text-4xl my-16  font-bold bg-gradient-to-r from-yellow-500 to-rose-500 bg-clip-text text-transparent">
           LATEST PROJECTS
         </h1>
       </h1>
-      <div className="w-full h-auto s flex justify-center">
-        <div className="lg:flex justify-center  lg:flex-wrap lg:gap-10 lg:w-[1200px] mb-24">
+      <div className="w-full h-auto flex justify-center p-10">
+        <div className="lg:flex justify-center lg:flex-wrap lg:gap-10 lg:w-[1200px] mb-24 ">
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -44,7 +44,7 @@ const Projects = () => {
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.8 }}
             variants={cardVariants}
-            className="lg:w-[550px] lg:h-[300px]  rounded-lg flex  items-end p-16"
+            className="lg:w-[550px] lg:h-[300px] w-full h-[300px] rounded-lg text-center flex items-center justify-center "
           >
             <div className="">
               <h1 className="text-5xl bg-gradient-to-r from-yellow-500 to-gray-200 bg-clip-text text-transparent">
@@ -64,14 +64,13 @@ const Projects = () => {
               <div className="detail">
                 <h1 className="text-4xl opacity-100">Full Stack Project</h1>
                 <h1 className="my-2"> Ecommerce Web Site</h1>
-
                 <button
                   className="hover:text-gray-900 duration-500 flex items-center"
                   onClick={() =>
-                    router("https://github.com/spakitilover/E-Commerce-Shop")
+                    router("//github.com/spakitilover/E-Commerce-Shop")
                   }
                 >
-                  Check out
+                  GitHub
                   <ArrowRightAlt />
                 </button>
               </div>
@@ -89,8 +88,13 @@ const Projects = () => {
               <div className="detail">
                 <h1 className=" text-4xl">Full Stack Project</h1>
                 <h1 className="my-2">Social Media App</h1>
-                <button className="hover:text-gray-900 duration-500 flex items-center">
-                  Check out
+                <button
+                  className="hover:text-gray-900 duration-500 flex items-center"
+                  onClick={() =>
+                    router("//github.com/spakitilover/Social-Media-App")
+                  }
+                >
+                  GitHub
                   <ArrowRightAlt />
                 </button>
               </div>
@@ -106,10 +110,15 @@ const Projects = () => {
             <motion.img src={image4} className="image" />
             <div className="over">
               <div className="detail">
-                <h1 className="text-4xl">UI/UX Design</h1>
-                <h1 className="my-2">Portfolio</h1>
-                <button className="hover:text-gray-900 duration-500 flex items-center">
-                  Check out
+                <h1 className="text-4xl">Full Stack Project</h1>
+                <h1 className="my-2">Music Player </h1>
+                <button
+                  className="hover:text-gray-900 duration-500 flex items-center"
+                  onClick={() =>
+                    router("//github.com/spakitilover/Music-Player")
+                  }
+                >
+                  GitHub
                   <ArrowRightAlt />
                 </button>
               </div>
