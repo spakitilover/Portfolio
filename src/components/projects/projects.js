@@ -3,7 +3,7 @@ import image2 from "./../images/ecm.png";
 import image3 from "./../images/image2.png";
 import image4 from "./../images/image3.jpg";
 import anim from "./../images/anim.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import ArrowRightAlt from "@mui/icons-material/ArrowRightAlt";
 import { motion } from "framer-motion";
@@ -25,6 +25,8 @@ const Projects = () => {
       },
     },
   };
+
+  const router = useNavigate();
 
   return (
     <div className="w-full h-auto bg-gray-700 " id="projects">
@@ -62,12 +64,16 @@ const Projects = () => {
               <div className="detail">
                 <h1 className="text-4xl opacity-100">Full Stack Project</h1>
                 <h1 className="my-2"> Ecommerce Web Site</h1>
-                <Link to="https://github.com/spakitilover/E-Commerce-Shop">
-                  <button className="hover:text-gray-900 duration-500 flex items-center">
-                    Check out
-                    <ArrowRightAlt />
-                  </button>
-                </Link>
+
+                <button
+                  className="hover:text-gray-900 duration-500 flex items-center"
+                  onClick={() =>
+                    router("https://github.com/spakitilover/E-Commerce-Shop")
+                  }
+                >
+                  Check out
+                  <ArrowRightAlt />
+                </button>
               </div>
             </div>
           </motion.div>
