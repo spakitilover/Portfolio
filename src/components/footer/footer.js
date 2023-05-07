@@ -14,9 +14,6 @@ const Footer = () => {
       </div>
       <div className="gap-3 flex">
         <div className="w-[40px] h-[40px] bg-gray-900 rounded-full flex justify-center items-center">
-          <Instagram className="text-white" />
-        </div>
-        <div className="w-[40px] h-[40px] bg-gray-900 rounded-full flex justify-center items-center">
           <LinkedIn className="text-white" />
         </div>
         <div className="w-[40px] h-[40px] bg-gray-900 rounded-full flex justify-center items-center">

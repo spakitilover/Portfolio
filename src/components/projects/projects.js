@@ -4,6 +4,7 @@ import image3 from "./../images/image2.png";
 import image4 from "./../images/image3.jpg";
 import anim from "./../images/anim.png";
 import { Link, useNavigate } from "react-router-dom";
+import GitHub from "@mui/icons-material/GitHub";
 
 import ArrowRightAlt from "@mui/icons-material/ArrowRightAlt";
 import { motion } from "framer-motion";
@@ -65,11 +66,12 @@ const Projects = () => {
                 <h1 className="text-4xl opacity-100">Full Stack Project</h1>
                 <h1 className="my-2"> Ecommerce Web Site</h1>
                 <button
-                  className="hover:text-gray-900 duration-500 flex items-center"
+                  className="hover:text-gray-900 duration-500 flex items-center gap-2"
                   onClick={() =>
                     router("//github.com/spakitilover/E-Commerce-Shop")
                   }
                 >
+                  <GitHub />
                   GitHub
                   <ArrowRightAlt />
                 </button>
@@ -89,11 +91,13 @@ const Projects = () => {
                 <h1 className=" text-4xl">Full Stack Project</h1>
                 <h1 className="my-2">Social Media App</h1>
                 <button
-                  className="hover:text-gray-900 duration-500 flex items-center"
+                  className="hover:text-gray-900 duration-500 flex items-center gap-2"
                   onClick={() =>
                     router("//github.com/spakitilover/Social-Media-App")
                   }
                 >
+                  {" "}
+                  <GitHub />
                   GitHub
                   <ArrowRightAlt />
                 </button>
@@ -111,13 +115,15 @@ const Projects = () => {
             <div className="over">
               <div className="detail">
                 <h1 className="text-4xl">Full Stack Project</h1>
-                <h1 className="my-2">Music Player </h1>
+                <h1 className="my-2">Music Player App </h1>
                 <button
-                  className="hover:text-gray-900 duration-500 flex items-center"
+                  className="hover:text-gray-900 duration-500 flex items-center gap-2"
                   onClick={() =>
                     router("//github.com/spakitilover/Music-Player")
                   }
                 >
+                  {" "}
+                  <GitHub />
                   GitHub
                   <ArrowRightAlt />
                 </button>

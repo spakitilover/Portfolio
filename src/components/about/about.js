@@ -3,8 +3,11 @@ import LaptopMac from "@mui/icons-material/LaptopMac";
 import Code from "@mui/icons-material/Code";
 import ArrowRightAlt from "@mui/icons-material/ArrowRightAlt";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const router = useNavigate();
+
   return (
     <div className="h-auto w-full bg-gray-100">
       <div className=" flex justify-center">
@@ -27,7 +30,14 @@ const About = () => {
                 <h1 className="my-10 lg:text-2xl text-blue-900 lg:w-[100px] w-[50px]">
                   UI/UX Integrator
                 </h1>
-                <span className="animate-pulse text-purple-800 hover:text-white duration-300 cursor-pointer">
+                <span
+                  onClick={() =>
+                    router(
+                      "//bootcamp.uxdesign.cc/what-is-ui-ux-designing-b07c47c44939"
+                    )
+                  }
+                  className="animate-pulse text-purple-800 hover:text-white duration-300 cursor-pointer"
+                >
                   Read More
                   <ArrowRightAlt />
                 </span>
@@ -45,7 +55,12 @@ const About = () => {
                 <h1 className="my-10 lg:text-2xl text-blue-900 lg:w-[150px] ">
                   Front End Development.
                 </h1>
-                <span className="animate-pulse text-purple-800 hover:text-white duration-300 cursor-pointer">
+                <span
+                  onClick={() =>
+                    router("//www.coursera.org/articles/front-end-developer")
+                  }
+                  className="animate-pulse text-purple-800 hover:text-white duration-300 cursor-pointer"
+                >
                   Read More
                   <ArrowRightAlt />
                 </span>
@@ -63,7 +78,12 @@ const About = () => {
                 <h1 className="my-10 lg:text-2xl text-blue-900 lg:w-[150px]">
                   Back End Development.
                 </h1>
-                <span className="animate-pulse text-purple-800 hover:text-white duration-300 cursor-pointer">
+                <span
+                  onClick={() =>
+                    router("//www.coursera.org/articles/back-end-developer")
+                  }
+                  className="animate-pulse text-purple-800 hover:text-white duration-300 cursor-pointer"
+                >
                   Read More
                   <ArrowRightAlt />
                 </span>

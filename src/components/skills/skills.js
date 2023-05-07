@@ -148,6 +148,12 @@ const Skills = () => {
                 <CheckCircleOutlineOutlined className="text-green-500" />
                 <span className="ml-5 my-1 text-gray-100">Problem Solving</span>
               </div>
+              <div className="flex items-center">
+                <CheckCircleOutlineOutlined className="text-green-500" />
+                <span className="ml-5 my-1 text-gray-100">
+                  Communication Skills
+                </span>
+              </div>
 
               <div className="flex items-center">
                 <CheckCircleOutlineOutlined className="text-green-500" />
