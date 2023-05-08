@@ -97,7 +97,7 @@ const About = () => {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.2 }}
               viewport={{ once: true, amount: 0.8 }}
-              className=" lg:w-[900px] lg:h-[300px] md:w-[700px] md:h-[300px] w-full h-[400px] bg-gradient-to-r from-rose-500 to-yellow-500  rounded-2xl lg:flex lg:p-14 md:p-5 lg:items-center md:flex md:items-center flex-none"
+              className=" lg:w-[900px] lg:h-[300px] md:w-[700px] md:h-[300px] w-full h-[400px] bg-gradient-to-r from-rose-500 to-yellow-500  rounded-2xl lg:flex lg:p-14 md:p-5 p-3 lg:items-center md:flex md:items-center flex-none"
             >
               <div className="flex justify-center">
                 <div className="border-2  my-10 lg:w-[200px] lg:h-[200px] md:w-[100px] md:h-[100px] w-[80px] h-[80px] bg-gray-100 lg:flex lg:items-center lg:justify-center flex items-center justify-center rounded-full">

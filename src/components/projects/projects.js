@@ -49,7 +49,7 @@ const Projects = () => {
           >
             <div className="">
               <h1 className="text-5xl bg-gradient-to-r from-yellow-500 to-gray-200 bg-clip-text text-transparent">
-                MY LATEST WORCK
+                MY LATEST WORK
               </h1>
             </div>
           </motion.div>

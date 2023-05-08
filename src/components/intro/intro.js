@@ -26,7 +26,8 @@ const Intro = () => {
             <div>
               <p className="text-gray-500">
                 Im a Full Stack Web Developer with strong knowledge on React Js
-                and Nest Js also able to Work with Next Js and Node js{" "}
+                and Nest Js also able to Work with Next Js and Node js,
+                producing quality work{" "}
               </p>
             </div>
           </div>

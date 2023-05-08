@@ -5,6 +5,7 @@ import GitHub from "@mui/icons-material/GitHub";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
+import TaskAlt from "@mui/icons-material/TaskAlt";
 
 const Contact = () => {
   const [fullname, setFullname] = useState("");
@@ -177,11 +178,17 @@ const Contact = () => {
               </div>
               <button
                 onClick={handlEmailSend}
-                className="my-5 border-2 border-white text-white p-4 rounded-lg hover:text-orange-500 duration-300"
+                className="border-2 border-white text-white p-4 rounded-lg hover:text-orange-500 duration-300"
               >
                 Send Message
               </button>
             </div>
+            {sent ? (
+              <div className="text-green-500 flex items-center gap-3">
+                <TaskAlt />
+                <span>Message Sent Successfully !</span>
+              </div>
+            ) : null}
           </div>
         </div>
       </div>

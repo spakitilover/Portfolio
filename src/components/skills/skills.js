@@ -27,7 +27,7 @@ const Skills = () => {
         SKILLS
       </h1>
       <div className="flex justify-center">
-        <span className="font-bold text-lg  text-center my-5 w-[500px] ">
+        <span className="text-lg text-center my-5 p-3 w-[500px] ">
           Im a Full Stack Web Developer useing the latest technologies for Web
           site Building , Take a Look{" "}
         </span>
