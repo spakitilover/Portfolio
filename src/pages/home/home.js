@@ -7,6 +7,7 @@ import Navbar from "../../components/navbar/navbar";
 import Projects from "../../components/projects/projects";
 import Skills from "../../components/skills/skills";
 import Tracker from "../../components/tracker/tracker";
+import AboutMe from "../../components/about me/aboutMe";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Navbar />
       <div>
         <Intro />
+        <AboutMe />
         <About />
         <Skills />
         <Projects />

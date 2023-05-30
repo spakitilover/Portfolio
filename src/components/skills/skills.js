@@ -41,17 +41,17 @@ const Skills = () => {
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.3 }}
             variants={cardVariants}
-            className="lg:w-[300px] lg:h-[450px] md:w-[230px] md:h-[400px] w-[300px] h-[400px] bg-gray-200 rounded-2xl lg:p-10 md:p-5 p-10"
+            className="lg:w-[300px] lg:h-[450px] md:w-[230px] md:h-[400px] w-[300px] h-[400px] bg-[#355261] rounded-2xl lg:p-10 md:p-5 p-10"
           >
             <div className=" flex justify-center">
               <div className="flex items-center justify-center lg:w-[80px] lg:h-[80px] w-[50px] h-[50px] bg-gradient-to-r from-orange-500 to-rose-500 rounded-full">
                 <DataObject className="text-white" />
               </div>
             </div>
-            <h1 className="flex justify-center lg:text-xl md:text-lg text-purple-800 my-5">
+            <h1 className="flex justify-center lg:text-xl md:text-lg text-orange-500 my-5">
               Front Develoment
             </h1>
-            <div>
+            <div className="text-white">
               <div className="flex items-center">
                 <CheckCircleOutlineOutlined className="text-green-500" />
                 <span className="ml-5 my-1">ReactJs</span>
@@ -91,17 +91,17 @@ const Skills = () => {
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.5 }}
             variants={cardVariants}
-            className="lg:w-[300px] lg:h-[450px] md:w-[230px] md:h-[400px] w-[300px] h-[400px] bg-gray-300 rounded-2xl lg:p-10 md:p-5 p-10"
+            className="lg:w-[300px] lg:h-[450px] md:w-[230px] md:h-[400px] w-[300px] h-[400px] bg-[#355261] rounded-2xl lg:p-10 md:p-5 p-10"
           >
             <div className=" flex justify-center">
               <div className="flex items-center justify-center lg:w-[80px] lg:h-[80px] w-[50px] h-[50px] bg-gradient-to-r from-orange-500 to-rose-500 rounded-full">
                 <Storage className="text-white" />
               </div>
             </div>
-            <h1 className="flex justify-center lg:text-xl md:text-lg text-purple-800 my-5">
+            <h1 className="flex justify-center lg:text-xl md:text-lg text-orange-500 my-5">
               Back Develoment
             </h1>
-            <div>
+            <div className="text-white">
               <div className="flex items-center">
                 <CheckCircleOutlineOutlined className="text-green-500" />
                 <span className="ml-5 my-1">NodeJs</span>
@@ -120,7 +120,11 @@ const Skills = () => {
               </div>
               <div className="flex items-center">
                 <CheckCircleOutlineOutlined className="text-green-500" />
-                <span className="ml-5 my-1">No SQL Database</span>
+                <span className="ml-5 my-1">SQL Databases</span>
+              </div>
+              <div className="flex items-center">
+                <CheckCircleOutlineOutlined className="text-green-500" />
+                <span className="ml-5 my-1">No SQL Databases</span>
               </div>
             </div>
           </motion.div>
@@ -133,17 +137,17 @@ const Skills = () => {
             whileInView="onscreen"
             viewport={{ once: true, amount: 0.8 }}
             variants={cardVariants}
-            className="lg:w-[300px] lg:h-[450px] md:w-[230px] md:h-[400px] w-[300px] h-[400px] bg-gray-400 rounded-2xl lg:p-10 md:p-5 p-10"
+            className="lg:w-[300px] lg:h-[450px] md:w-[230px] md:h-[400px] w-[300px] h-[400px] bg-[#355261] rounded-2xl lg:p-10 md:p-5 p-10"
           >
             <div className=" flex justify-center">
               <div className="flex items-center justify-center lg:w-[80px] lg:h-[80px] w-[50px] h-[50px] bg-gradient-to-r from-orange-500 to-rose-500 rounded-full">
                 <ConstructionOutlined className="text-white" />
               </div>
             </div>
-            <h1 className="flex justify-center lg:text-xl md:text-lg text-purple-800 my-5">
-              Extra Bonus
+            <h1 className="flex justify-center lg:text-xl md:text-lg text-orange-500 my-5">
+              Soft Skills
             </h1>
-            <div>
+            <div className="text-white">
               <div className="flex items-center">
                 <CheckCircleOutlineOutlined className="text-green-500" />
                 <span className="ml-5 my-1 text-gray-100">Problem Solving</span>
