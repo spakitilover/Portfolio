@@ -7,19 +7,19 @@ import LinkedIn from "@mui/icons-material/LinkedIn";
 const Intro = () => {
   return (
     <div className="h-auto bg-gray-100" id="home">
-      <div className="lg:flex h-full">
+      <div className="lg:flex h-full w-full">
         <div className="lg:flex-1 flex items-center ">
-          <div className=" lg:p-32 p-14">
-            <h1 className="text-5xl font-bold lg:my-5 my-5 text-blue-500">
+          <div className="lg:p-32 p-14">
+            <h1 className="text-5xl font-bold lg:my-5 my-5 text-blue-500 ">
               I'm Kabaki
             </h1>
             <div>
-              <span className=" lg:text-7xl text-5xl text-center font-bold bg-gradient-to-r from-yellow-500 to-rose-500 bg-clip-text text-transparent">
+              <span className="lg:text-7xl text-5xl text-center font-bold bg-gradient-to-r from-yellow-500 to-rose-500 bg-clip-text text-transparent">
                 Full Stack-Web Developer.
               </span>
             </div>
             <div className=" lg:my-5 my-5">
-              <span className=" text-gray-500 text-lg ">
+              <span className=" text-gray-500 text-lg">
                 Welcome to my Portfolio , My name is Tarik Kabaki . Im A Full
                 Stack Web Developer, UI/UX Integrator.
               </span>
@@ -27,11 +27,11 @@ const Intro = () => {
           </div>
         </div>
         <div className="lg:flex-1 h-full">
-          <div className="w-full h-full bg-gradient-to-r from-yellow-400 to-rose-500 lg:rounded-bl-[50%] overflow-hidden p-5 ">
-            <div className="lg:h-[800px] w-full flex justify-center items-center ">
+          <div>
+            <div className="lg:h-[800px] w-full flex justify-center items-center">
               <img
                 src={image1}
-                className="lg:h-[550px] lg:w-[550px] h-[250px] w-[250px] rounded-full object-cover border-8 border-white  "
+                className="lg:h-[700px] lg:w-[600px] h-[350px] w-[250px] rounded-t-full object-cover border-8 border-yellow-500  "
               />
             </div>
           </div>

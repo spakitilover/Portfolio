@@ -10,7 +10,7 @@ const AboutMe = () => {
     <div className="w-full h-auto bg-gray-100 ">
       <div className="lg:flex w-full lg:p-32 ">
         <div className="lg:h-[600px] h-[400px] lg:flex-1 flex justify-center items-center p-5">
-          <div className="lg:w-[600px] lg:h-[650px] w-full h-full bg-gray-500 overflow-hidden rounded-2xl z-20 bg-gradient-to-r from-yellow-500 to-orange-300  ">
+          <div className="lg:w-[35vw] lg:h-[650px] w-full h-full bg-gray-500 overflow-hidden rounded-2xl z-20 bg-gradient-to-r from-yellow-500 to-orange-300  ">
             <img
               src={img1}
               className="lg:w-full lg:h-full object-cover w-full h-full"
