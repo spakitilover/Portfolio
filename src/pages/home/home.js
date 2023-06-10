@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import About from "../../components/about/about";
 import Contact from "../../components/contact/contact";
 import Footer from "../../components/footer/footer";
@@ -8,20 +8,31 @@ import Projects from "../../components/projects/projects";
 import Skills from "../../components/skills/skills";
 import Tracker from "../../components/tracker/tracker";
 import AboutMe from "../../components/about me/aboutMe";
+import { createContext, useState } from "react";
+
+export const ThemeContext = createContext();
 
 const Home = () => {
+  const [theme, setTheme] = useState(true);
+
   return (
     <>
-      <Navbar />
-      <div>
-        <Intro />
-        <AboutMe />
-        <About />
-        <Skills />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
+      <ThemeContext.Provider value={{ theme, setTheme }}>
+        <Navbar />
+        <div
+          className={
+            theme ? `bg-gray-100 duration-500` : " bg-[#171717] duration-500"
+          }
+        >
+          <Intro />
+          <AboutMe />
+          <About />
+          <Skills />
+          <Projects />
+          <Contact />
+          <Footer />
+        </div>
+      </ThemeContext.Provider>
     </>
   );
 };

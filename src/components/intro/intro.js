@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../../components/intro/intro.css";
 import image1 from "../images/kb.png";
-import GitHub from "@mui/icons-material/GitHub";
-import LinkedIn from "@mui/icons-material/LinkedIn";
+import { ThemeContext } from "../../pages/home/home";
 
 const Intro = () => {
+  const context = useContext(ThemeContext);
+
   return (
-    <div className="h-auto bg-gray-100" id="home">
+    <div className="h-auto " id="home">
       <div className="lg:flex h-full w-full">
         <div className="lg:flex-1 flex items-center ">
           <div className="lg:p-32 p-14">
@@ -19,7 +20,13 @@ const Intro = () => {
               </span>
             </div>
             <div className=" lg:my-5 my-5">
-              <span className=" text-gray-500 text-lg">
+              <span
+                className={
+                  context.theme
+                    ? "text-gray-500 text-lg duration-500"
+                    : "text-white text-lg duration-500"
+                }
+              >
                 Welcome to my Portfolio , My name is Tarik Kabaki . Im A Full
                 Stack Web Developer, UI/UX Integrator.
               </span>

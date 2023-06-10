@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import Storage from "@mui/icons-material/Storage";
 import DataObject from "@mui/icons-material/DataObject";
 import CheckCircleOutlineOutlined from "@mui/icons-material/CheckCircleOutlineOutlined";
 import ConstructionOutlined from "@mui/icons-material/ConstructionOutlined";
 import { motion } from "framer-motion";
+import { ThemeContext } from "../../pages/home/home";
 
 const Skills = () => {
+  const context = useContext(ThemeContext);
   const cardVariants = {
     offscreen: {
       y: 300,
@@ -22,12 +24,18 @@ const Skills = () => {
   };
 
   return (
-    <div className="h-auto w-full bg-gray-100" id="skills">
+    <div className="h-auto w-full " id="skills">
       <h1 className=" flex justify-center text-4xl text-orange-600  ">
         SKILLS
       </h1>
       <div className="flex justify-center">
-        <span className="text-lg text-center my-5 p-3 w-[500px] ">
+        <span
+          className={
+            context.theme
+              ? "text-lg text-center my-5 p-3 w-[500px] duration-500"
+              : "text-lg text-center my-5 p-3 w-[500px] duration-500 text-slate-200"
+          }
+        >
           Im a Full Stack Web Developer useing the latest technologies for Web
           site Building , Take a Look{" "}
         </span>
