@@ -9,6 +9,8 @@ import DarkModeOutlined from "@mui/icons-material/DarkModeOutlined";
 import LightModeOutlined from "@mui/icons-material/LightModeOutlined";
 import { useContext } from "react";
 import { ThemeContext } from "../../pages/home/home";
+import DarkModeRounded from "@mui/icons-material/DarkModeRounded";
+import LightModeRounded from "@mui/icons-material/LightModeRounded";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -69,17 +71,21 @@ const Navbar = () => {
               }
             >
               <div className="flex items-center">
-                <div>
-                  <DarkModeOutlined />
-                </div>
-                <Switch
-                  {...label}
-                  checked={context.theme === true}
-                  onClick={() => context.setTheme(!context.theme)}
-                />
-                <div>
-                  <LightModeOutlined />
-                </div>
+                {context.theme === true ? (
+                  <button
+                    onClick={() => context.setTheme(!context.theme)}
+                    className="w-[35px] h-[35px] rounded-full bg-white flex justify-center items-center border-2 border-orange-500 hover:bg-[#2E2E2E] duration-300"
+                  >
+                    <LightModeRounded style={{ color: "orange" }} />
+                  </button>
+                ) : (
+                  <button
+                    onClick={() => context.setTheme(!context.theme)}
+                    className="w-[35px] h-[35px] rounded-full bg-[#2E2E2E] flex justify-center items-center border-2 border-white hover:bg-orange-500 duration-300"
+                  >
+                    <DarkModeRounded style={{ color: "white" }} />
+                  </button>
+                )}
               </div>
             </li>
           </ul>
@@ -150,3 +156,17 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+/** <div className="flex items-center">
+                <div>
+                  <DarkModeOutlined />
+                </div>
+                <Switch
+                  {...label}
+                  checked={context.theme === true}
+                  onClick={() => context.setTheme(!context.theme)}
+                />
+                <div>
+                  <LightModeOutlined />
+                </div>
+              </div> */
