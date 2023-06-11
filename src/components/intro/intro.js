@@ -8,9 +8,9 @@ const Intro = () => {
 
   return (
     <div className="h-auto " id="home">
-      <div className="lg:flex h-full w-full">
-        <div className="lg:flex-1 flex items-center ">
-          <div className="lg:p-32 p-14">
+      <div className="lg:flex h-full">
+        <div className="lg:flex-1 flex items-center justify-center">
+          <div className="w-[70%] lg:text-start text-center">
             <h1 className="text-5xl font-bold lg:my-5 my-5 text-blue-500 ">
               I'm Kabaki
             </h1>
@@ -19,7 +19,7 @@ const Intro = () => {
                 Full Stack-Web Developer.
               </span>
             </div>
-            <div className=" lg:my-5 my-5">
+            <div className=" lg:my-5 my-5 ">
               <span
                 className={
                   context.theme
@@ -34,11 +34,15 @@ const Intro = () => {
           </div>
         </div>
         <div className="lg:flex-1 h-full">
-          <div>
+          <div className="pr-5">
             <div className="lg:h-[800px] w-full flex justify-center items-center">
               <img
                 src={image1}
-                className="lg:h-[700px] lg:w-[600px] h-[350px] w-[250px] rounded-t-full object-cover border-8 border-yellow-500  "
+                className={
+                  context.theme
+                    ? "lg:h-[600px] lg:w-[600px] h-[350px] w-[250px] rounded-full object-cover border-8 border-orange-400 duration-300"
+                    : "lg:h-[600px] lg:w-[600px] h-[350px] w-[250px] rounded-full object-cover border-8 border-slate-200 duration-300"
+                }
               />
             </div>
           </div>
